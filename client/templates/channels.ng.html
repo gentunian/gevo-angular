@@ -1,0 +1,25 @@
+<ion-view view-title="Channels">
+  <ion-content>
+     <ion-list>
+      <ion-item
+              ng-repeat="channel in channels"
+              class="item-chat item-remove-animate item-avatar item-icon-right"
+              type="item-text-wrap"
+              href="#/events">
+        <img ng-src="{{channel.picture}}">
+        <h2>{{channel.name}}</h2>
+        <p style="white-space: normal;">{{channel.description}}</p>
+        <span class="last-message-timestamp"></span>
+        <i class="icon {{channel.public? 'ion-ios-world balanced': 'ion-person'}}"></i>
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+      <ion-item href="#/test" style="height: 44px;">TEST</ion-item>
+    </ion-list>
+
+  </ion-content>
+  <button class="round-overlay-button bottom-right assertive button button-icon icon ion-ios7-search-strong light">
+    <i class="icon ion-android-create"></i>
+  </button>
+</ion-view>
