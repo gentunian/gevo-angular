@@ -1,0 +1,22 @@
+<ion-view view-title="Events">
+
+  <ion-content>
+
+       <ion-list ng-repeat="event in events"
+        type="list">
+
+        <ion-item class="item-avatar">
+          <img ng-src="/img/football4.png">
+          <h2>{{event.name}} at {{event.location}}</h2>
+          <p>by Juan Pérez <span style="float:right; color:#9c9c9c;">{{event.datetime | calendar}}</span></p>
+        </ion-item>
+        
+      </ion-list>
+
+  </ion-content>
+
+  <button class="round-overlay-button bottom-right assertive button button-icon icon ion-ios7-search-strong light">
+    <i class="icon ion-android-create"></i>
+  </button>
+
+</ion-view>
