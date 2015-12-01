@@ -1,0 +1,12 @@
+<template name="perftest">
+    <div class="list">
+        {{#each events}}
+        <div class="item item-avatar">
+
+          <img ng-src="">
+          <h2>{{name}} at {{location}}</h2>
+          <p>by John Doe<span style="float:right; color:#9c9c9c;">{{datetime}}</span></p>
+        </div>
+        {{/each}}
+    </div>
+</template>
