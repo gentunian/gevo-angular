@@ -1,0 +1,11 @@
+.bar-header {
+   height: 55px;
+}
+
+.bar-header .title {
+   line-height: 55px;
+}
+
+.has-header {
+   top: 55px;
+}
