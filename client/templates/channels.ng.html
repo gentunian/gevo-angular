@@ -1,6 +1,7 @@
 <ion-view view-title="Channels">
   <ion-content>
      <ion-list>
+       <!--
       <ion-item
               ng-repeat="channel in channels"
               class="item-chat item-remove-animate item-avatar item-icon-right"
@@ -12,7 +13,13 @@
         <span class="last-message-timestamp"></span>
         <i class="icon {{channel.public? 'ion-ios-world balanced': 'ion-person'}}"></i>
       </ion-item>
-      <ion-item href="#/test" style="height: 44px;">TEST</ion-item>
+      -->
+      <ion-item href="#/events">
+        <h2>Angular ng-repeat</h2>
+      </ion-item>
+      <ion-item href="#/test">
+        <h2>Blaze {{#each}}</h2>
+      </ion-item>
     </ion-list>
 
   </ion-content>
